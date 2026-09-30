@@ -119,6 +119,33 @@ Raw datasets:
 
 Create reusable data-processing code under `src/`.
 
+The proposed module list below is illustrative. Phase 1 has no justified
+cross-dataset integration responsibility, so `integration.py` is intentionally
+omitted. The implemented loader, cleaning, validation, and pipeline modules
+are described in `docs/DATA_PIPELINE.md`.
+
+Phase 1 creates only these processed tables: `users`, `user_behavior`,
+`tracks`, and `streaming_events`. Do not add `user_id` to streaming events
+or assign preference profiles to behavior users. Streaming history and
+preferences have no user identifier; any such relationship would be synthetic
+and is outside this phase. The preference workbook remains raw and is not
+read by the Phase 1 pipeline.
+
+Preserve the current notebook's cleaning rules: remove exact duplicate
+streaming rows, fill missing `reason_start` and `reason_end` with `unknown`,
+and preserve preference missingness (no preference table is produced in this
+phase). Generate surrogate IDs in stable first-seen source order so unchanged
+inputs produce identical IDs.
+
+Validate raw and processed schemas, row counts, nulls, duplicates,
+primary-key uniqueness, data types, and the `streaming_events.track_id` to
+`tracks.track_id` and `user_behavior.user_id` to `users.user_id` relationships.
+Write outputs only beneath `data/processed/`; never modify `data/raw/`.
+
+Run from the repository root with `python -m src.data.pipeline`. Phase 1 is
+complete when the four tables can be reproduced and all validation checks
+pass. Later project phases are not part of this step.
+
 Potential modules:
 
 ```text

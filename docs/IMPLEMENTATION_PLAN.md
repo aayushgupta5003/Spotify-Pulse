@@ -156,3 +156,26 @@ src/
 │   ├── cleaning.py
 │   ├── validation.py
 │   └── integration.py
+```
+
+## 5. Phase 2 — Analytical Model and Synthetic Preference Integration
+
+Phase 2 retains the four Phase 1 tables and adds only
+`data/processed/user_preferences.csv` plus a mapping metadata JSON. The
+preference table has one row per behavior user, but each survey assignment is
+synthetic. Never add `user_id` to `streaming_events`.
+
+Treat all 520 survey responses as the preference source distribution. Expand
+each response proportionally to 15 or 16 assignments, then solve a global
+capacity-constrained assignment maximizing age-band and normalized-gender
+compatibility. These are soft signals, not hard constraints; use a fixed seed
+only for tied quotas and assignments. Do not use other behavior signals
+without a demonstrated semantic correspondence in source fields. Retain
+per-row source-response and compatibility diagnostics, and report
+category-distribution drift against the survey.
+
+Run `python -m src.data.integration` to regenerate Phase 1 and Phase 2 outputs
+together. Validate profile quotas, user coverage and uniqueness, demographic
+compatibility diagnostics, category margins, structural missingness, and
+reproducibility. Do not begin SQL analytics, EDA, ML, experimentation, or
+dashboard work until Phase 2 is reviewed and complete.

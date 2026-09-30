@@ -1,0 +1,1482 @@
+{
+  "assigned_user_count": 8000,
+  "compatibility": {
+    "age_compatible_count": 3928,
+    "age_compatible_share": 0.491,
+    "assigned_user_count": 8000,
+    "both_compatible_count": 2343,
+    "both_compatible_share": 0.292875,
+    "gender_compatible_count": 4644,
+    "gender_compatible_share": 0.5805,
+    "mean_compatibility_score": 1.0715,
+    "rationale_counts": {
+      "age_and_gender_compatible": 2343,
+      "age_only_compatible": 1585,
+      "gender_only_compatible": 2301,
+      "neither_demographic_signal_compatible": 1771
+    }
+  },
+  "demographic_scoring": {
+    "age_band_policy": "Survey ranges use inclusive endpoints as written; 60+ means age >= 60.",
+    "constraints": "Soft only; global assignment maximizes total score while preserving profile quotas.",
+    "gender_normalization": {
+      "Others": "Other"
+    },
+    "score": "age_band_compatible (0/1) + normalized_gender_compatible (0/1)",
+    "tie_breaking": "Seeded integer costs are used only after compatibility score is prioritized."
+  },
+  "exact_duplicate_survey_rows_retained": 1,
+  "input_sha256": {
+    "spotify_user_preferences.xlsx": "ca2c06130b1ad5f9a3e87c0dad0be64be30824cc20581b38641e61d140e1c8d3",
+    "users.csv": "97dc1eeba1b5740be3f28f95b12933503c53908595ce4b529e7d7274008e2d6a"
+  },
+  "method": "proportional_response_expansion_with_global_demographic_compatibility_transport",
+  "missing_source_preference_values": {
+    "fav_music_genre": 0,
+    "fav_pod_genre": 148,
+    "music_Influencial_mood": 0,
+    "music_expl_method": 0,
+    "music_lis_frequency": 0,
+    "music_recc_rating": 0,
+    "music_time_slot": 0,
+    "pod_host_preference": 141,
+    "pod_lis_frequency": 0,
+    "pod_variety_satisfaction": 0,
+    "preferred_listening_content": 0,
+    "preffered_pod_duration": 129,
+    "preffered_pod_format": 140,
+    "preffered_premium_plan": 208,
+    "premium_sub_willingness": 0,
+    "spotify_listening_device": 0,
+    "spotify_subscription_plan": 0,
+    "spotify_usage_period": 0
+  },
+  "preference_distribution_comparison": {
+    "fav_music_genre": {
+      "categories": [
+        {
+          "assigned_count": 93,
+          "assigned_share": 0.011625,
+          "delta_percentage_points": 0.008653846153846081,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "All"
+        },
+        {
+          "assigned_count": 31,
+          "assigned_share": 0.003875,
+          "delta_percentage_points": 0.0028846153846153605,
+          "source_count": 2,
+          "source_share": 0.0038461538461538464,
+          "value": "Classical & melody, dance"
+        },
+        {
+          "assigned_count": 245,
+          "assigned_share": 0.030625,
+          "delta_percentage_points": -0.01442307692307715,
+          "source_count": 16,
+          "source_share": 0.03076923076923077,
+          "value": "Electronic/Dance"
+        },
+        {
+          "assigned_count": 62,
+          "assigned_share": 0.00775,
+          "delta_percentage_points": 0.005769230769230721,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Kpop"
+        },
+        {
+          "assigned_count": 3978,
+          "assigned_share": 0.49725,
+          "delta_percentage_points": -0.08269230769230584,
+          "source_count": 259,
+          "source_share": 0.4980769230769231,
+          "value": "Melody"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Old songs"
+        },
+        {
+          "assigned_count": 1308,
+          "assigned_share": 0.1635,
+          "delta_percentage_points": 0.0038461538461542766,
+          "source_count": 85,
+          "source_share": 0.16346153846153846,
+          "value": "Pop"
+        },
+        {
+          "assigned_count": 848,
+          "assigned_share": 0.106,
+          "delta_percentage_points": 0.023076923076922884,
+          "source_count": 55,
+          "source_share": 0.10576923076923077,
+          "value": "Rap"
+        },
+        {
+          "assigned_count": 61,
+          "assigned_share": 0.007625,
+          "delta_percentage_points": -0.00673076923076929,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Rock"
+        },
+        {
+          "assigned_count": 1344,
+          "assigned_share": 0.168,
+          "delta_percentage_points": 0.06923076923077143,
+          "source_count": 87,
+          "source_share": 0.1673076923076923,
+          "value": "classical"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "trending songs random"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.08269230769230584,
+      "total_variation_distance": 0.0011346153846153884
+    },
+    "fav_pod_genre": {
+      "categories": [
+        {
+          "assigned_count": 2273,
+          "assigned_share": 0.284125,
+          "delta_percentage_points": -0.0490384615384587,
+          "source_count": 148,
+          "source_share": 0.2846153846153846,
+          "value": null
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Business"
+        },
+        {
+          "assigned_count": 1654,
+          "assigned_share": 0.20675,
+          "delta_percentage_points": 0.09807692307692295,
+          "source_count": 107,
+          "source_share": 0.20576923076923076,
+          "value": "Comedy"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Dance and Relevant cases "
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Educational "
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Everything"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Finance related and current affairs"
+        },
+        {
+          "assigned_count": 304,
+          "assigned_share": 0.038,
+          "delta_percentage_points": -0.04615384615384646,
+          "source_count": 20,
+          "source_share": 0.038461538461538464,
+          "value": "Food and cooking"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "General knowledge "
+        },
+        {
+          "assigned_count": 1200,
+          "assigned_share": 0.15,
+          "delta_percentage_points": 0.0,
+          "source_count": 78,
+          "source_share": 0.15,
+          "value": "Health and Fitness"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Informative stuff"
+        },
+        {
+          "assigned_count": 1569,
+          "assigned_share": 0.196125,
+          "delta_percentage_points": -0.0028846153846157074,
+          "source_count": 102,
+          "source_share": 0.19615384615384615,
+          "value": "Lifestyle and Health"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Murder Mystery "
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Novels"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Political, informative, topics that interests me"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Self help"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Spiritual and devotional"
+        },
+        {
+          "assigned_count": 783,
+          "assigned_share": 0.097875,
+          "delta_percentage_points": -0.020192307692307176,
+          "source_count": 51,
+          "source_share": 0.09807692307692308,
+          "value": "Sports"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Stories "
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Technology"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.09807692307692295,
+      "total_variation_distance": 0.0015192307692307554
+    },
+    "music_Influencial_mood": {
+      "categories": [
+        {
+          "assigned_count": 3000,
+          "assigned_share": 0.375,
+          "delta_percentage_points": 0.0,
+          "source_count": 195,
+          "source_share": 0.375,
+          "value": "Relaxation and stress relief"
+        },
+        {
+          "assigned_count": 512,
+          "assigned_share": 0.064,
+          "delta_percentage_points": 0.05384615384615432,
+          "source_count": 33,
+          "source_share": 0.06346153846153846,
+          "value": "Relaxation and stress relief, Sadness or melancholy"
+        },
+        {
+          "assigned_count": 124,
+          "assigned_share": 0.0155,
+          "delta_percentage_points": 0.011538461538461442,
+          "source_count": 8,
+          "source_share": 0.015384615384615385,
+          "value": "Relaxation and stress relief, Sadness or melancholy, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 197,
+          "assigned_share": 0.024625,
+          "delta_percentage_points": -0.03750000000000003,
+          "source_count": 13,
+          "source_share": 0.025,
+          "value": "Relaxation and stress relief, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 677,
+          "assigned_share": 0.084625,
+          "delta_percentage_points": 0.0009615384615385691,
+          "source_count": 44,
+          "source_share": 0.08461538461538462,
+          "value": "Relaxation and stress relief, Uplifting and motivational"
+        },
+        {
+          "assigned_count": 338,
+          "assigned_share": 0.04225,
+          "delta_percentage_points": -0.005769230769230721,
+          "source_count": 22,
+          "source_share": 0.04230769230769231,
+          "value": "Relaxation and stress relief, Uplifting and motivational, Sadness or melancholy"
+        },
+        {
+          "assigned_count": 539,
+          "assigned_share": 0.067375,
+          "delta_percentage_points": 0.006730769230769984,
+          "source_count": 35,
+          "source_share": 0.0673076923076923,
+          "value": "Relaxation and stress relief, Uplifting and motivational, Sadness or melancholy, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 215,
+          "assigned_share": 0.026875,
+          "delta_percentage_points": -0.004807692307692499,
+          "source_count": 14,
+          "source_share": 0.026923076923076925,
+          "value": "Relaxation and stress relief, Uplifting and motivational, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 840,
+          "assigned_share": 0.105,
+          "delta_percentage_points": -0.0769230769230772,
+          "source_count": 55,
+          "source_share": 0.10576923076923077,
+          "value": "Sadness or melancholy"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Sadness or melancholy, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 247,
+          "assigned_share": 0.030875,
+          "delta_percentage_points": 0.010576923076922873,
+          "source_count": 16,
+          "source_share": 0.03076923076923077,
+          "value": "Social gatherings or parties"
+        },
+        {
+          "assigned_count": 1033,
+          "assigned_share": 0.129125,
+          "delta_percentage_points": 0.02788461538461573,
+          "source_count": 67,
+          "source_share": 0.12884615384615383,
+          "value": "Uplifting and motivational"
+        },
+        {
+          "assigned_count": 186,
+          "assigned_share": 0.02325,
+          "delta_percentage_points": 0.017307692307692163,
+          "source_count": 12,
+          "source_share": 0.023076923076923078,
+          "value": "Uplifting and motivational, Sadness or melancholy"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Uplifting and motivational, Sadness or melancholy, Social gatherings or parties"
+        },
+        {
+          "assigned_count": 61,
+          "assigned_share": 0.007625,
+          "delta_percentage_points": -0.00673076923076929,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Uplifting and motivational, Social gatherings or parties"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.0769230769230772,
+      "total_variation_distance": 0.0013653846153846242
+    },
+    "music_expl_method": {
+      "categories": [
+        {
+          "assigned_count": 845,
+          "assigned_share": 0.105625,
+          "delta_percentage_points": -0.01442307692307715,
+          "source_count": 55,
+          "source_share": 0.10576923076923077,
+          "value": "Others"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Others, Friends"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Others, Search"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Others, Social media"
+        },
+        {
+          "assigned_count": 1726,
+          "assigned_share": 0.21575,
+          "delta_percentage_points": 0.036538461538460076,
+          "source_count": 112,
+          "source_share": 0.2153846153846154,
+          "value": "Playlists"
+        },
+        {
+          "assigned_count": 138,
+          "assigned_share": 0.01725,
+          "delta_percentage_points": -0.005769230769230721,
+          "source_count": 9,
+          "source_share": 0.01730769230769231,
+          "value": "Playlists, Others"
+        },
+        {
+          "assigned_count": 277,
+          "assigned_share": 0.034625,
+          "delta_percentage_points": 0.0009615384615385691,
+          "source_count": 18,
+          "source_share": 0.03461538461538462,
+          "value": "Playlists, Radio"
+        },
+        {
+          "assigned_count": 95,
+          "assigned_share": 0.011875,
+          "delta_percentage_points": 0.033653846153846104,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "Playlists, Radio, Others"
+        },
+        {
+          "assigned_count": 784,
+          "assigned_share": 0.098,
+          "delta_percentage_points": -0.007692307692307165,
+          "source_count": 51,
+          "source_share": 0.09807692307692308,
+          "value": "Radio"
+        },
+        {
+          "assigned_count": 107,
+          "assigned_share": 0.013375,
+          "delta_percentage_points": -0.008653846153846255,
+          "source_count": 7,
+          "source_share": 0.013461538461538462,
+          "value": "Radio, Others"
+        },
+        {
+          "assigned_count": 1732,
+          "assigned_share": 0.2165,
+          "delta_percentage_points": -0.08076923076923148,
+          "source_count": 113,
+          "source_share": 0.2173076923076923,
+          "value": "recommendations"
+        },
+        {
+          "assigned_count": 232,
+          "assigned_share": 0.029,
+          "delta_percentage_points": 0.015384615384615372,
+          "source_count": 15,
+          "source_share": 0.028846153846153848,
+          "value": "recommendations, Others"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "recommendations, Others, Social media"
+        },
+        {
+          "assigned_count": 1325,
+          "assigned_share": 0.165625,
+          "delta_percentage_points": 0.024038461538461453,
+          "source_count": 86,
+          "source_share": 0.16538461538461538,
+          "value": "recommendations, Playlists"
+        },
+        {
+          "assigned_count": 278,
+          "assigned_share": 0.03475,
+          "delta_percentage_points": 0.01346153846153858,
+          "source_count": 18,
+          "source_share": 0.03461538461538462,
+          "value": "recommendations, Playlists, Others"
+        },
+        {
+          "assigned_count": 199,
+          "assigned_share": 0.024875,
+          "delta_percentage_points": -0.012500000000000011,
+          "source_count": 13,
+          "source_share": 0.025,
+          "value": "recommendations, Playlists, Radio"
+        },
+        {
+          "assigned_count": 32,
+          "assigned_share": 0.004,
+          "delta_percentage_points": 0.015384615384615372,
+          "source_count": 2,
+          "source_share": 0.0038461538461538464,
+          "value": "recommendations, Playlists, Radio, Others"
+        },
+        {
+          "assigned_count": 93,
+          "assigned_share": 0.011625,
+          "delta_percentage_points": 0.008653846153846081,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "recommendations, Radio"
+        },
+        {
+          "assigned_count": 61,
+          "assigned_share": 0.007625,
+          "delta_percentage_points": -0.00673076923076929,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "recommendations, Radio, Others"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "recommendations,Others, Social media"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.08076923076923148,
+      "total_variation_distance": 0.0015576923076923033
+    },
+    "music_lis_frequency": {
+      "categories": [
+        {
+          "assigned_count": 243,
+          "assigned_share": 0.030375,
+          "delta_percentage_points": -0.03942307692307717,
+          "source_count": 16,
+          "source_share": 0.03076923076923077,
+          "value": "Office hours"
+        },
+        {
+          "assigned_count": 107,
+          "assigned_share": 0.013375,
+          "delta_percentage_points": -0.008653846153846255,
+          "source_count": 7,
+          "source_share": 0.013461538461538462,
+          "value": "Office hours, Study Hours, While Traveling"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Office hours, Study Hours, While Traveling, Workout session"
+        },
+        {
+          "assigned_count": 109,
+          "assigned_share": 0.013625,
+          "delta_percentage_points": 0.016346153846153767,
+          "source_count": 7,
+          "source_share": 0.013461538461538462,
+          "value": "Office hours, Study Hours, While Traveling, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Office hours, Study Hours, While Traveling, Workout session, leisure time, "
+        },
+        {
+          "assigned_count": 46,
+          "assigned_share": 0.00575,
+          "delta_percentage_points": -0.0019230769230769648,
+          "source_count": 3,
+          "source_share": 0.0057692307692307696,
+          "value": "Office hours, Study Hours, While Traveling, leisure time"
+        },
+        {
+          "assigned_count": 30,
+          "assigned_share": 0.00375,
+          "delta_percentage_points": -0.00961538461538465,
+          "source_count": 2,
+          "source_share": 0.0038461538461538464,
+          "value": "Office hours, Study Hours, Workout session"
+        },
+        {
+          "assigned_count": 181,
+          "assigned_share": 0.022625,
+          "delta_percentage_points": -0.04519230769230789,
+          "source_count": 12,
+          "source_share": 0.023076923076923078,
+          "value": "Office hours, While Traveling"
+        },
+        {
+          "assigned_count": 32,
+          "assigned_share": 0.004,
+          "delta_percentage_points": 0.015384615384615372,
+          "source_count": 2,
+          "source_share": 0.0038461538461538464,
+          "value": "Office hours, While Traveling, "
+        },
+        {
+          "assigned_count": 151,
+          "assigned_share": 0.018875,
+          "delta_percentage_points": -0.03557692307692324,
+          "source_count": 10,
+          "source_share": 0.019230769230769232,
+          "value": "Office hours, While Traveling, Workout session"
+        },
+        {
+          "assigned_count": 47,
+          "assigned_share": 0.005875,
+          "delta_percentage_points": 0.010576923076923046,
+          "source_count": 3,
+          "source_share": 0.0057692307692307696,
+          "value": "Office hours, While Traveling, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 186,
+          "assigned_share": 0.02325,
+          "delta_percentage_points": 0.017307692307692163,
+          "source_count": 12,
+          "source_share": 0.023076923076923078,
+          "value": "Office hours, While Traveling, leisure time"
+        },
+        {
+          "assigned_count": 45,
+          "assigned_share": 0.005625,
+          "delta_percentage_points": -0.014423076923076976,
+          "source_count": 3,
+          "source_share": 0.0057692307692307696,
+          "value": "Office hours, Workout session"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Office hours, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 92,
+          "assigned_share": 0.0115,
+          "delta_percentage_points": -0.0038461538461539296,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "Office hours, leisure time"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Office hours,Study Hours, While Traveling, leisure time"
+        },
+        {
+          "assigned_count": 16,
+          "assigned_share": 0.002,
+          "delta_percentage_points": 0.007692307692307686,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Random "
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "Social gatherings "
+        },
+        {
+          "assigned_count": 294,
+          "assigned_share": 0.03675,
+          "delta_percentage_points": 0.021153846153845746,
+          "source_count": 19,
+          "source_share": 0.03653846153846154,
+          "value": "Study Hours"
+        },
+        {
+          "assigned_count": 141,
+          "assigned_share": 0.017625,
+          "delta_percentage_points": 0.031730769230768965,
+          "source_count": 9,
+          "source_share": 0.01730769230769231,
+          "value": "Study Hours, While Traveling"
+        },
+        {
+          "assigned_count": 108,
+          "assigned_share": 0.0135,
+          "delta_percentage_points": 0.003846153846153756,
+          "source_count": 7,
+          "source_share": 0.013461538461538462,
+          "value": "Study Hours, While Traveling, Workout session"
+        },
+        {
+          "assigned_count": 62,
+          "assigned_share": 0.00775,
+          "delta_percentage_points": 0.005769230769230721,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Study Hours, While Traveling, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 155,
+          "assigned_share": 0.019375,
+          "delta_percentage_points": 0.014423076923076802,
+          "source_count": 10,
+          "source_share": 0.019230769230769232,
+          "value": "Study Hours, While Traveling, leisure time"
+        },
+        {
+          "assigned_count": 93,
+          "assigned_share": 0.011625,
+          "delta_percentage_points": 0.008653846153846081,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "Study Hours, Workout session"
+        },
+        {
+          "assigned_count": 61,
+          "assigned_share": 0.007625,
+          "delta_percentage_points": -0.00673076923076929,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Study Hours, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 63,
+          "assigned_share": 0.007875,
+          "delta_percentage_points": 0.018269230769230732,
+          "source_count": 4,
+          "source_share": 0.007692307692307693,
+          "value": "Study Hours, leisure time"
+        },
+        {
+          "assigned_count": 1704,
+          "assigned_share": 0.213,
+          "delta_percentage_points": -0.04615384615384577,
+          "source_count": 111,
+          "source_share": 0.21346153846153845,
+          "value": "While Traveling"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "While Traveling, Before bed "
+        },
+        {
+          "assigned_count": 250,
+          "assigned_share": 0.03125,
+          "delta_percentage_points": 0.048076923076922906,
+          "source_count": 16,
+          "source_share": 0.03076923076923077,
+          "value": "While Traveling, Workout session"
+        },
+        {
+          "assigned_count": 737,
+          "assigned_share": 0.092125,
+          "delta_percentage_points": -0.018269230769231426,
+          "source_count": 48,
+          "source_share": 0.09230769230769231,
+          "value": "While Traveling, Workout session, leisure time"
+        },
+        {
+          "assigned_count": 15,
+          "assigned_share": 0.001875,
+          "delta_percentage_points": -0.004807692307692325,
+          "source_count": 1,
+          "source_share": 0.0019230769230769232,
+          "value": "While Traveling, Workout session, leisure time, Night time, when cooking"
+        },
+        {
+          "assigned_count": 998,
+          "assigned_share": 0.12475,
+          "delta_percentage_points": -0.025000000000000022,
+          "source_count": 65,
+          "source_share": 0.125,
+          "value": "While Traveling, leisure time"
+        },
+        {
+          "assigned_count": 512,
+          "assigned_share": 0.064,
+          "delta_percentage_points": 0.05384615384615432,
+          "source_count": 33,
+          "source_share": 0.06346153846153846,
+          "value": "Workout session"
+        },
+        {
+          "assigned_count": 93,
+          "assigned_share": 0.011625,
+          "delta_percentage_points": 0.008653846153846081,
+          "source_count": 6,
+          "source_share": 0.011538461538461539,
+          "value": "Workout session, leisure time"
+        },
+        {
+          "assigned_count": 1336,
+          "assigned_share": 0.167,
+          "delta_percentage_points": -0.03076923076922866,
+          "source_count": 87,
+          "source_share": 0.1673076923076923,
+          "value": "leisure time"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.05384615384615432,
+      "total_variation_distance": 0.0030480769230769138
+    },
+    "music_recc_rating": {
+      "categories": [
+        {
+          "assigned_count": 213,
+          "assigned_share": 0.026625,
+          "delta_percentage_points": -0.02980769230769252,
+          "source_count": 14,
+          "source_share": 0.026923076923076925,
+          "value": 1
+        },
+        {
+          "assigned_count": 862,
+          "assigned_share": 0.10775,
+          "delta_percentage_points": 0.005769230769230027,
+          "source_count": 56,
+          "source_share": 0.1076923076923077,
+          "value": 2
+        },
+        {
+          "assigned_count": 2922,
+          "assigned_share": 0.36525,
+          "delta_percentage_points": -0.013461538461534417,
+          "source_count": 190,
+          "source_share": 0.36538461538461536,
+          "value": 3
+        },
+        {
+          "assigned_count": 2678,
+          "assigned_share": 0.33475,
+          "delta_percentage_points": 0.013461538461539968,
+          "source_count": 174,
+          "source_share": 0.3346153846153846,
+          "value": 4
+        },
+        {
+          "assigned_count": 1325,
+          "assigned_share": 0.165625,
+          "delta_percentage_points": 0.024038461538461453,
+          "source_count": 86,
+          "source_share": 0.16538461538461538,
+          "value": 5
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.02980769230769252,
+      "total_variation_distance": 0.00043269230769229193
+    },
+    "music_time_slot": {
+      "categories": [
+        {
+          "assigned_count": 1796,
+          "assigned_share": 0.2245,
+          "delta_percentage_points": -0.050000000000000044,
+          "source_count": 117,
+          "source_share": 0.225,
+          "value": "Afternoon"
+        },
+        {
+          "assigned_count": 1400,
+          "assigned_share": 0.175,
+          "delta_percentage_points": 0.0,
+          "source_count": 91,
+          "source_share": 0.175,
+          "value": "Morning"
+        },
+        {
+          "assigned_count": 4804,
+          "assigned_share": 0.6005,
+          "delta_percentage_points": 0.050000000000005596,
+          "source_count": 312,
+          "source_share": 0.6,
+          "value": "Night"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.050000000000005596,
+      "total_variation_distance": 0.0005000000000000282
+    },
+    "pod_host_preference": {
+      "categories": [
+        {
+          "assigned_count": 2170,
+          "assigned_share": 0.27125,
+          "delta_percentage_points": 0.009615384615385691,
+          "source_count": 141,
+          "source_share": 0.27115384615384613,
+          "value": null
+        },
+        {
+          "assigned_count": 2769,
+          "assigned_share": 0.346125,
+          "delta_percentage_points": -0.002884615384612932,
+          "source_count": 180,
+          "source_share": 0.34615384615384615,
+          "value": "Both"
+        },
+        {
+          "assigned_count": 1753,
+          "assigned_share": 0.219125,
+          "delta_percentage_points": -0.01057692307692426,
+          "source_count": 114,
+          "source_share": 0.21923076923076923,
+          "value": "Well known individuals"
+        },
+        {
+          "assigned_count": 1308,
+          "assigned_share": 0.1635,
+          "delta_percentage_points": 0.0038461538461542766,
+          "source_count": 85,
+          "source_share": 0.16346153846153846,
+          "value": "unknown Podcasters"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.01057692307692426,
+      "total_variation_distance": 0.0001346153846153858
+    },
+    "pod_lis_frequency": {
+      "categories": [
+        {
+          "assigned_count": 310,
+          "assigned_share": 0.03875,
+          "delta_percentage_points": 0.028846153846153605,
+          "source_count": 20,
+          "source_share": 0.038461538461538464,
+          "value": "Daily"
+        },
+        {
+          "assigned_count": 1994,
+          "assigned_share": 0.24925,
+          "delta_percentage_points": -0.07500000000000007,
+          "source_count": 130,
+          "source_share": 0.25,
+          "value": "Never"
+        },
+        {
+          "assigned_count": 1404,
+          "assigned_share": 0.1755,
+          "delta_percentage_points": 0.050000000000000044,
+          "source_count": 91,
+          "source_share": 0.175,
+          "value": "Once a week"
+        },
+        {
+          "assigned_count": 3093,
+          "assigned_share": 0.386625,
+          "delta_percentage_points": 0.008653846153844347,
+          "source_count": 201,
+          "source_share": 0.38653846153846155,
+          "value": "Rarely"
+        },
+        {
+          "assigned_count": 1199,
+          "assigned_share": 0.149875,
+          "delta_percentage_points": -0.012499999999998623,
+          "source_count": 78,
+          "source_share": 0.15,
+          "value": "Several times a week"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.07500000000000007,
+      "total_variation_distance": 0.0008749999999999834
+    },
+    "pod_variety_satisfaction": {
+      "categories": [
+        {
+          "assigned_count": 307,
+          "assigned_share": 0.038375,
+          "delta_percentage_points": -0.008653846153846428,
+          "source_count": 20,
+          "source_share": 0.038461538461538464,
+          "value": "Dissatisfied"
+        },
+        {
+          "assigned_count": 4303,
+          "assigned_share": 0.537875,
+          "delta_percentage_points": -0.05865384615384439,
+          "source_count": 280,
+          "source_share": 0.5384615384615384,
+          "value": "Ok"
+        },
+        {
+          "assigned_count": 2497,
+          "assigned_share": 0.312125,
+          "delta_percentage_points": 0.05865384615384439,
+          "source_count": 162,
+          "source_share": 0.31153846153846154,
+          "value": "Satisfied"
+        },
+        {
+          "assigned_count": 154,
+          "assigned_share": 0.01925,
+          "delta_percentage_points": 0.0019230769230767913,
+          "source_count": 10,
+          "source_share": 0.019230769230769232,
+          "value": "Very Dissatisfied"
+        },
+        {
+          "assigned_count": 739,
+          "assigned_share": 0.092375,
+          "delta_percentage_points": 0.006730769230768596,
+          "source_count": 48,
+          "source_share": 0.09230769230769231,
+          "value": "Very Satisfied"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.05865384615384439,
+      "total_variation_distance": 0.000673076923076903
+    },
+    "preferred_listening_content": {
+      "categories": [
+        {
+          "assigned_count": 6305,
+          "assigned_share": 0.788125,
+          "delta_percentage_points": -0.033653846153847145,
+          "source_count": 410,
+          "source_share": 0.7884615384615384,
+          "value": "Music"
+        },
+        {
+          "assigned_count": 1695,
+          "assigned_share": 0.211875,
+          "delta_percentage_points": 0.033653846153847145,
+          "source_count": 110,
+          "source_share": 0.21153846153846154,
+          "value": "Podcast"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.033653846153847145,
+      "total_variation_distance": 0.00033653846153847145
+    },
+    "preffered_pod_duration": {
+      "categories": [
+        {
+          "assigned_count": 1983,
+          "assigned_share": 0.247875,
+          "delta_percentage_points": -0.020192307692307176,
+          "source_count": 129,
+          "source_share": 0.24807692307692308,
+          "value": null
+        },
+        {
+          "assigned_count": 1804,
+          "assigned_share": 0.2255,
+          "delta_percentage_points": 0.050000000000000044,
+          "source_count": 117,
+          "source_share": 0.225,
+          "value": "Both"
+        },
+        {
+          "assigned_count": 1276,
+          "assigned_share": 0.1595,
+          "delta_percentage_points": -0.011538461538460054,
+          "source_count": 83,
+          "source_share": 0.1596153846153846,
+          "value": "Longer"
+        },
+        {
+          "assigned_count": 2937,
+          "assigned_share": 0.367125,
+          "delta_percentage_points": -0.01826923076923559,
+          "source_count": 191,
+          "source_share": 0.36730769230769234,
+          "value": "Shorter"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.050000000000000044,
+      "total_variation_distance": 0.0005000000000000143
+    },
+    "preffered_pod_format": {
+      "categories": [
+        {
+          "assigned_count": 2154,
+          "assigned_share": 0.26925,
+          "delta_percentage_points": 0.0019230769230771383,
+          "source_count": 140,
+          "source_share": 0.2692307692307692,
+          "value": null
+        },
+        {
+          "assigned_count": 1611,
+          "assigned_share": 0.201375,
+          "delta_percentage_points": -0.05480769230769289,
+          "source_count": 105,
+          "source_share": 0.20192307692307693,
+          "value": "Conversational"
+        },
+        {
+          "assigned_count": 753,
+          "assigned_share": 0.094125,
+          "delta_percentage_points": -0.010576923076922873,
+          "source_count": 49,
+          "source_share": 0.09423076923076923,
+          "value": "Educational"
+        },
+        {
+          "assigned_count": 1139,
+          "assigned_share": 0.142375,
+          "delta_percentage_points": 0.006730769230769984,
+          "source_count": 74,
+          "source_share": 0.1423076923076923,
+          "value": "Interview"
+        },
+        {
+          "assigned_count": 2343,
+          "assigned_share": 0.292875,
+          "delta_percentage_points": 0.05673076923076725,
+          "source_count": 152,
+          "source_share": 0.2923076923076923,
+          "value": "Story telling"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.05673076923076725,
+      "total_variation_distance": 0.0006538461538461507
+    },
+    "preffered_premium_plan": {
+      "categories": [
+        {
+          "assigned_count": 3189,
+          "assigned_share": 0.398625,
+          "delta_percentage_points": -0.1375000000000015,
+          "source_count": 208,
+          "source_share": 0.4,
+          "value": null
+        },
+        {
+          "assigned_count": 1293,
+          "assigned_share": 0.161625,
+          "delta_percentage_points": 0.008653846153844347,
+          "source_count": 84,
+          "source_share": 0.16153846153846155,
+          "value": "Duo plan- Rs 149/month"
+        },
+        {
+          "assigned_count": 601,
+          "assigned_share": 0.075125,
+          "delta_percentage_points": 0.012500000000000011,
+          "source_count": 39,
+          "source_share": 0.075,
+          "value": "Family Plan-Rs 179/month"
+        },
+        {
+          "assigned_count": 1468,
+          "assigned_share": 0.1835,
+          "delta_percentage_points": 0.08076923076923148,
+          "source_count": 95,
+          "source_share": 0.18269230769230768,
+          "value": "Individual Plan- Rs 119/ month"
+        },
+        {
+          "assigned_count": 1449,
+          "assigned_share": 0.181125,
+          "delta_percentage_points": 0.03557692307692428,
+          "source_count": 94,
+          "source_share": 0.18076923076923077,
+          "value": "Student Plan-Rs 59/month"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.1375000000000015,
+      "total_variation_distance": 0.0013750000000000082
+    },
+    "premium_sub_willingness": {
+      "categories": [
+        {
+          "assigned_count": 5136,
+          "assigned_share": 0.642,
+          "delta_percentage_points": -0.030769230769234213,
+          "source_count": 334,
+          "source_share": 0.6423076923076924,
+          "value": "No"
+        },
+        {
+          "assigned_count": 2864,
+          "assigned_share": 0.358,
+          "delta_percentage_points": 0.03076923076922866,
+          "source_count": 186,
+          "source_share": 0.3576923076923077,
+          "value": "Yes"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.030769230769234213,
+      "total_variation_distance": 0.00030769230769231437
+    },
+    "spotify_listening_device": {
+      "categories": [
+        {
+          "assigned_count": 834,
+          "assigned_share": 0.10425,
+          "delta_percentage_points": 0.04038461538461435,
+          "source_count": 54,
+          "source_share": 0.10384615384615385,
+          "value": "Computer or laptop"
+        },
+        {
+          "assigned_count": 215,
+          "assigned_share": 0.026875,
+          "delta_percentage_points": -0.004807692307692499,
+          "source_count": 14,
+          "source_share": 0.026923076923076925,
+          "value": "Computer or laptop, Smart speakers or voice assistants"
+        },
+        {
+          "assigned_count": 45,
+          "assigned_share": 0.005625,
+          "delta_percentage_points": -0.014423076923076976,
+          "source_count": 3,
+          "source_share": 0.0057692307692307696,
+          "value": "Computer or laptop, Smart speakers or voice assistants, Wearable devices"
+        },
+        {
+          "assigned_count": 77,
+          "assigned_share": 0.009625,
+          "delta_percentage_points": 0.0009615384615383957,
+          "source_count": 5,
+          "source_share": 0.009615384615384616,
+          "value": "Computer or laptop, Wearable devices"
+        },
+        {
+          "assigned_count": 666,
+          "assigned_share": 0.08325,
+          "delta_percentage_points": 0.05576923076923146,
+          "source_count": 43,
+          "source_share": 0.08269230769230769,
+          "value": "Smart speakers or voice assistants"
+        },
+        {
+          "assigned_count": 32,
+          "assigned_share": 0.004,
+          "delta_percentage_points": 0.015384615384615372,
+          "source_count": 2,
+          "source_share": 0.0038461538461538464,
+          "value": "Smart speakers or voice assistants, Wearable devices"
+        },
+        {
+          "assigned_count": 4609,
+          "assigned_share": 0.576125,
+          "delta_percentage_points": -0.07980769230768736,
+          "source_count": 300,
+          "source_share": 0.5769230769230769,
+          "value": "Smartphone"
+        },
+        {
+          "assigned_count": 739,
+          "assigned_share": 0.092375,
+          "delta_percentage_points": 0.006730769230768596,
+          "source_count": 48,
+          "source_share": 0.09230769230769231,
+          "value": "Smartphone, Computer or laptop"
+        },
+        {
+          "assigned_count": 106,
+          "assigned_share": 0.01325,
+          "delta_percentage_points": -0.021153846153846266,
+          "source_count": 7,
+          "source_share": 0.013461538461538462,
+          "value": "Smartphone, Computer or laptop, Smart speakers or voice assistants"
+        },
+        {
+          "assigned_count": 124,
+          "assigned_share": 0.0155,
+          "delta_percentage_points": 0.011538461538461442,
+          "source_count": 8,
+          "source_share": 0.015384615384615385,
+          "value": "Smartphone, Computer or laptop, Smart speakers or voice assistants, Wearable devices"
+        },
+        {
+          "assigned_count": 77,
+          "assigned_share": 0.009625,
+          "delta_percentage_points": 0.0009615384615383957,
+          "source_count": 5,
+          "source_share": 0.009615384615384616,
+          "value": "Smartphone, Computer or laptop, Wearable devices"
+        },
+        {
+          "assigned_count": 153,
+          "assigned_share": 0.019125,
+          "delta_percentage_points": -0.01057692307692322,
+          "source_count": 10,
+          "source_share": 0.019230769230769232,
+          "value": "Smartphone, Smart speakers or voice assistants"
+        },
+        {
+          "assigned_count": 78,
+          "assigned_share": 0.00975,
+          "delta_percentage_points": 0.013461538461538407,
+          "source_count": 5,
+          "source_share": 0.009615384615384616,
+          "value": "Smartphone, Smart speakers or voice assistants, Wearable devices"
+        },
+        {
+          "assigned_count": 121,
+          "assigned_share": 0.015125,
+          "delta_percentage_points": -0.02596153846153859,
+          "source_count": 8,
+          "source_share": 0.015384615384615385,
+          "value": "Smartphone, Wearable devices"
+        },
+        {
+          "assigned_count": 124,
+          "assigned_share": 0.0155,
+          "delta_percentage_points": 0.011538461538461442,
+          "source_count": 8,
+          "source_share": 0.015384615384615385,
+          "value": "Wearable devices"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.07980769230768736,
+      "total_variation_distance": 0.0015673076923076639
+    },
+    "spotify_subscription_plan": {
+      "categories": [
+        {
+          "assigned_count": 6520,
+          "assigned_share": 0.815,
+          "delta_percentage_points": -0.038461538461542766,
+          "source_count": 424,
+          "source_share": 0.8153846153846154,
+          "value": "Free (ad-supported)"
+        },
+        {
+          "assigned_count": 1480,
+          "assigned_share": 0.185,
+          "delta_percentage_points": 0.038461538461537215,
+          "source_count": 96,
+          "source_share": 0.18461538461538463,
+          "value": "Premium (paid subscription)"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.038461538461542766,
+      "total_variation_distance": 0.0003846153846153999
+    },
+    "spotify_usage_period": {
+      "categories": [
+        {
+          "assigned_count": 2172,
+          "assigned_share": 0.2715,
+          "delta_percentage_points": 0.03461538461538849,
+          "source_count": 141,
+          "source_share": 0.27115384615384613,
+          "value": "1 year to 2 years"
+        },
+        {
+          "assigned_count": 1834,
+          "assigned_share": 0.22925,
+          "delta_percentage_points": 0.04038461538461713,
+          "source_count": 119,
+          "source_share": 0.22884615384615384,
+          "value": "6 months to 1 year"
+        },
+        {
+          "assigned_count": 1398,
+          "assigned_share": 0.17475,
+          "delta_percentage_points": -0.025000000000000022,
+          "source_count": 91,
+          "source_share": 0.175,
+          "value": "Less than 6 months"
+        },
+        {
+          "assigned_count": 2596,
+          "assigned_share": 0.3245,
+          "delta_percentage_points": -0.050000000000000044,
+          "source_count": 169,
+          "source_share": 0.325,
+          "value": "More than 2 years"
+        }
+      ],
+      "max_absolute_category_delta_percentage_points": 0.050000000000000044,
+      "total_variation_distance": 0.0007500000000000284
+    }
+  },
+  "profile_quota_counts": {
+    "15": 320,
+    "16": 200
+  },
+  "seed": 42,
+  "source_response_count": 520,
+  "synthetic_linkage": true,
+  "validation": {
+    "age_compatible_share": 0.491,
+    "both_compatible_share": 0.292875,
+    "compatibility_score_counts": {
+      "0": 1771,
+      "1": 3886,
+      "2": 2343
+    },
+    "gender_compatible_share": 0.5805,
+    "maximum_category_delta_percentage_points": 0.1375000000000015,
+    "maximum_total_variation_distance": 0.0030480769230769138,
+    "rows": 8000,
+    "unique_user_ids": 8000,
+    "validated_seed": 42
+  }
+}

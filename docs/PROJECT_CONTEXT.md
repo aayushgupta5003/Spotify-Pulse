@@ -547,14 +547,32 @@ Expected columns:
 
 ## 9.5 user_preferences
 
-A processed user preference table is planned but requires careful
-synthetic linkage between the 520 preference profiles and the 8,000
-users.
+`data/processed/user_preferences.csv` contains 8,000 user rows populated
+from the 520 raw survey responses using a **synthetic** mapping. It does not
+represent observed Spotify user-level preference data. Every row includes
+the source spreadsheet row and demographic compatibility diagnostics.
+Its grain is one synthetic survey-response assignment per `user_id`; the
+primary key is `user_id`, which references `users.user_id`. Survey Age and
+Gender are used only to calculate matching diagnostics and are not copied as
+user demographics.
 
-Do not implement this as arbitrary random matching.
+The mapper gives each observed response an expansion quota of 15 or 16 users
+(8,000 total), preserving source preference-category distributions within
+rounding error. It then globally maximizes age-band and normalized-gender
+compatibility without hard constraints. Survey age ranges use inclusive
+endpoints as written; `Others` is normalized to behavior gender `Other`.
+Seeded tie-breaking makes the assignment reproducible. The exact duplicate
+survey response is retained in the 520-response distribution.
 
-The demographic and behavioral constraints described earlier should be
-considered.
+No other behavioral matching is used: the survey's device responses are
+multi-select, listening-frequency responses describe contexts rather than
+play counts, and other fields lack defensible behavior counterparts. Missing
+survey preference values remain missing.
+
+The relationship from `user_id` to a survey response is synthetic. Never
+interpret preference-to-behavior associations from this table as real user
+relationships. See `docs/DATA_PIPELINE.md` for commands, validation, and
+distribution comparisons.
 
 ---
 
@@ -582,6 +600,9 @@ Core analytical tables:
 
 - streaming_events
 - user_behavior
+
+`user_preferences.user_id` is a synthetic linkage only. `streaming_events`
+remains unlinked to users because its source has no user identifier.
 
 ### Derived analytical tables
 
